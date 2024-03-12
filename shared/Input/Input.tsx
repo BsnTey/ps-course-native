@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 		borderRadius: Radius.r10,
 		fontSize: Fonts.f16,
 		color: Colors.gray,
-		fontFamily: 'FiraSans'
+		fontFamily: 'FiraSans',
 	},
 	eyeIcon: {
 		position: 'absolute',

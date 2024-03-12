@@ -16,7 +16,6 @@
     "react-native/no-raw-text": 2,
     "react-native/no-single-element-style-arrays": 2,
     "react-hooks/exhaustive-deps": "off",
-//    "quotes": ["error", "single"],
     "prettier/prettier": [
       "error",
       {
@@ -26,7 +25,8 @@
         "trailingComma": "all",
         "bracketSpacing": true,
         "printWidth": 100,
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "jsxSingleQuote": false
       }
     ],
     "@typescript-eslint/no-empty-function": [

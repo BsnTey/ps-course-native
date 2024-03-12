@@ -35,7 +35,7 @@
           "fonts": ["path/to/file.ttf"]
         }
       ]
-    ]
-  },
-  "scheme": "app"
+    ],
+    "scheme": "app"
+  }
 }
