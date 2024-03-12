@@ -32,7 +32,10 @@
       [
         "expo-font",
         {
-          "fonts": ["path/to/file.ttf"]
+          "fonts": [
+            "./assets/fonts/FiraSans-Regular.ttf",
+            ",../assets/fonts/FiraSans-SemiBold.ttf"
+          ]
         }
       ]
     ],
