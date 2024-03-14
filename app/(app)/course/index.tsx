@@ -1,14 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { Colors } from '../../../shared/tokens';
-import { useAtom } from 'jotai/react/useAtom';
-import { profileAtom } from '../../../entittes/user/model/user.state';
+import CustomLink from '../../../shared/CustomLink/CustomLink';
+import { useSetAtom } from 'jotai';
+import { logoutAtom } from '../../../entittes/auth/model/auth.state';
 
 export default function MyCoursePage() {
-	const [profile] = useAtom(profileAtom);
+	const logout = useSetAtom(logoutAtom);
+
 	return (
-		<View>
-			<Text style={styles.text}>{profile.profile?.name}</Text>
-		</View>
+		<SafeAreaView>
+			<View>
+				<Text style={styles.text}>index</Text>
+				<Button title="Выйти" onPress={logout} />
+			</View>
+			<CustomLink href={'/'} text={'Главная'} />
+		</SafeAreaView>
 	);
 }
 

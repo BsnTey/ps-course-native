@@ -1,14 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 import { Colors } from '../../../shared/tokens';
+import CustomLink from '../../../shared/CustomLink/CustomLink';
 
 export default function CoursePage() {
 	const { alias } = useLocalSearchParams();
 
 	return (
-		<View>
-			<Text style={styles.text}>{alias}</Text>
-		</View>
+		<SafeAreaView>
+			<View>
+				<Text style={styles.text}>{alias}</Text>
+			</View>
+			<CustomLink href={'/'} text={'Главная'} />
+		</SafeAreaView>
 	);
 }
 

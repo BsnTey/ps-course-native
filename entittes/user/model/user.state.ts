@@ -1,5 +1,5 @@
 import { User } from './user.model';
-import { atom } from 'jotai/vanilla/atom';
+import { atom } from 'jotai';
 
 export const profileAtom = atom<UserState>({
 	profile: {
